@@ -1,0 +1,39 @@
+{
+  "name": "sinopia-crowd",
+  "version": "0.0.0",
+  "description": "auth plugin for sinopia supporting atlassian crowd",
+  "homepage": "https://github.com/trsouz/sinopia-crowd",
+  "author": {
+    "name": "Thiago Rodrigues",
+    "email": "thiagorsouz@gmail.com",
+    "url": "http://trsweb.com.br"
+  },
+  "files": [
+    "lib"
+  ],
+  "main": "lib/index.js",
+  "keywords": [
+    "sinopia",
+    "auth",
+    "plugin",
+    "crowd",
+    "atlassian",
+    "crowd"
+  ],
+  "repository": "trsouz/sinopia-crowd",
+  "devDependencies": {
+    "gulp": "^3.6.0",
+    "gulp-eslint": "^1.0.0",
+    "gulp-exclude-gitignore": "^1.0.0",
+    "gulp-istanbul": "^0.9.0",
+    "gulp-mocha": "^2.0.0",
+    "gulp-plumber": "^1.0.0",
+    "gulp-nsp": "^2.1.0",
+    "gulp-coveralls": "^0.1.0"
+  },
+  "scripts": {
+    "prepublish": "gulp prepublish",
+    "test": "gulp"
+  },
+  "license": "MIT"
+}
