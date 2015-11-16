@@ -1,0 +1,71 @@
+[{
+  "scope": "http://mycrowdserver.com:80",
+  "method": "POST",
+  "path": "/rest/usermanagement/1/authentication?username=blah",
+  "body": {
+    "value": "blah"
+  },
+  "status": 400,
+  "response": {
+    "reason": "USER_NOT_FOUND",
+    "message": "User <blah> does not exist"
+  },
+  "headers": {
+    "server": "Apache-Coyote/1.1",
+    "x-embedded-crowd-version": "Crowd/2.7.2",
+    "x-crowd-user-management-version": "1.4",
+    "set-cookie": [
+      "JSESSIONID=FBAF0BB31284BF6018DCABB71487D2C5; Path=/; HttpOnly"
+    ],
+    "content-type": "application/json",
+    "transfer-encoding": "chunked",
+    "date": "Mon, 16 Nov 2015 00:19:56 GMT",
+    "connection": "close"
+  }
+}, {
+  "scope": "http://mycrowdserver.com:80",
+  "method": "POST",
+  "path": "/rest/usermanagement/1/authentication?username=foo1",
+  "body": {
+    "value": "bar1"
+  },
+  "status": 200,
+  "response": {
+    "expand": "attributes",
+    "link": {
+      "href": "http://mycrowdserver.com/rest/usermanagement/1/user?username=foo1",
+      "rel": "self"
+    },
+    "name": "foo1",
+    "password": {
+      "link": {
+        "href": "http://mycrowdserver.com/rest/usermanagement/1/user/password?username=foo1",
+        "rel": "edit"
+      }
+    },
+    "active": true,
+    "attributes": {
+      "attributes": [],
+      "link": {
+        "href": "http://mycrowdserver.com/rest/usermanagement/1/user/attribute?username=foo1",
+        "rel": "self"
+      }
+    },
+    "first-name": "Foo1",
+    "last-name": "Bar1",
+    "display-name": "Foo1 Bar1",
+    "email": "foo1@bar.com"
+  },
+  "headers": {
+    "server": "Apache-Coyote/1.1",
+    "x-embedded-crowd-version": "Crowd/2.7.2",
+    "x-crowd-user-management-version": "1.4",
+    "set-cookie": [
+      "JSESSIONID=57951A272CB90D0F2CB45D296254E976; Path=/; HttpOnly"
+    ],
+    "content-type": "application/json",
+    "transfer-encoding": "chunked",
+    "date": "Mon, 16 Nov 2015 00:15:12 GMT",
+    "connection": "close"
+  }
+}]
