@@ -1,5 +1,5 @@
-# sinopia-crowd [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
-> auth plugin for sinopia supporting atlassian crowd
+# Sinopia Atlassian Crowd plugin [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
+> auth plugin for [sinopia](https://www.npmjs.com/package/sinopia) supporting atlassian crowd
 
 ## Installation
 
@@ -9,10 +9,14 @@ $ npm install --save sinopia-crowd
 
 ## Usage
 
-```js
-var sinopiaCrowd = require('sinopia-crowd');
+### config.yaml
 
-sinopiaCrowd('Rainbow');
+```
+auth:
+  crowd:
+    base: 'http://your-crowd-server/'
+    name: 'application-name'
+    password: 'application-password'
 ```
 ## License
 
