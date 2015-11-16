@@ -1,6 +1,8 @@
 # Sinopia Atlassian Crowd plugin [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
 > auth plugin for [sinopia](https://www.npmjs.com/package/sinopia) supporting atlassian crowd
 
+> inspired by [sinopia-github](https://www.npmjs.com/package/sinopia-github)
+
 ## Installation
 
 ```sh
@@ -17,6 +19,12 @@ auth:
     base: 'http://your-crowd-server/'
     name: 'application-name'
     password: 'application-password'
+    ttl: 300 # Time to expire cache in seconds. Default is 0
+...
+packages:
+  'groupprefix-*':
+    access: $authenticated
+    publish: group-one, group-two, user-one # these are Crowd users and/or groups
 ```
 ## License
 

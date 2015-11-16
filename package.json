@@ -1,6 +1,6 @@
 {
   "name": "sinopia-crowd",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "auth plugin for sinopia supporting atlassian crowd",
   "homepage": "https://github.com/trsouz/sinopia-crowd",
   "author": {
@@ -37,6 +37,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "atlassian-crowd": "^0.5.0"
+    "atlassian-crowd": "^0.5.0",
+    "crypto": "0.0.3"
   }
 }
